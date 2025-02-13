@@ -75,6 +75,7 @@ button:hover {
   background-size: cover;
   bottom: 5%;
   left: 5%;
+  transition: all 0.3s;
   background-blend-mode: color;
   display: none;
 }

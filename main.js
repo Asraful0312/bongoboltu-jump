@@ -1,7 +1,6 @@
 const startBtn = document.querySelector("#startBtn");
 const bgMusic = document.querySelector("#bgMusic");
 const scream = new Audio("./music/bongobontu.mp3");
-const overMusic = new Audio("./music/game-over.mp3");
 const jumpMusic = new Audio("./music/amimorinai.mp3");
 
 bgMusic.volume = 0.3;
@@ -18,7 +17,7 @@ const wrapper = document.querySelector(".wrapper");
 const container = document.querySelector(".container");
 const containerWidth = container.clientWidth;
 const heroWidth = 50; // Adjust this based on your CSS
-const stepSize = 40;
+const stepSize = 70;
 
 // Restart Button
 const restartBtn = document.createElement("button");
