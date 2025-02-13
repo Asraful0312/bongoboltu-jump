@@ -4,6 +4,7 @@ const scream = new Audio("./music/bongobontu.mp3");
 const overMusic = new Audio("./music/game-over.mp3");
 const jumpMusic = new Audio("./music/amimorinai.mp3");
 
+bgMusic.volume = 0.3;
 let score = 0;
 let cross = true;
 let gameActive = false;
@@ -155,12 +156,15 @@ function collisionCheck() {
   }, 100);
 }
 
+//game over
 function gameOver() {
   gameActive = false;
   gameOverText.style.display = "block";
   monster.classList.remove("monsterAni");
   hero.style.display = "none";
   monster.style.display = "none";
+  scream.pause();
+  scream.currentTime = 0;
   scream.play();
   jumpMusic.pause();
   jumpMusic.currentTime = 0;
